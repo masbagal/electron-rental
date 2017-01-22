@@ -10,3 +10,8 @@ This stack used in this application's are :
  - [redux](https://github.com/reactjs/redux) for the state management
  - [lovefield](https://google.github.io/lovefield/) for the embedded database
  - [material-ui])(www.material-ui.com) for the interface (too lazy to design for now)
+
+ To try it :
+ - `$npm install`
+ - `$npm run build`
+ - `$npm start`

@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+#side-menu {
+  border-right: 1px solid #ccc;
+}
+
+.content-container {
+  padding: 20px 0;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.rightMenu {
+  float: right;
+  margin-top: 15px;
+}
+
+input[type='number'] {
+  max-width: 50px;
+  padding: 5px;
+  border: 0;
+}
+
+input[type='number']:focus {
+  border-bottom: 1px solid rgba(0, 188, 212);
+}
