@@ -59,9 +59,9 @@ export default class TransactionPage extends React.Component {
 
     return (
       <MuiThemeProvider>
-        <div className='row'>
+        <div id='mainContainer' className='row'>
           <SideMenu />
-          <div className='col-9 content-container'>
+          <div className='columns nine content-container'>
             <h3 className='inlineBlock'>Lending Transaction</h3>
             <div className='rightMenu'>
               <RaisedButton

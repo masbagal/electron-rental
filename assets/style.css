@@ -1,13 +1,67 @@
+@font-face {
+   font-family: Breplay;
+   src: url(font/bpreplay.woff);
+ }
+
+@font-face {
+  font-family: Breplay-Bold;
+  src: url(font/breplay-bold.woff);
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: #f0f0f0;
+  min-height: 100%;
+  width: 100%;
+  font-family: Breplay;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+#mainContainer {
+  height: 100%;
+  display: block;
 }
 
 #side-menu {
+  padding-top: 30px;
   border-right: 1px solid #ccc;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  color: #ddd;
+  height: 100vh;
+}
+
+#side-menu ul li {
+  list-style: none;
+  display: block;
+  padding: 30px;
+  font-size: 17px;
+  position: relative;
+}
+
+#side-menu ul li.active {
+  background: #f39c12;
+  font-family: Breplay-Bold;
+  color: #ffffff
+}
+
+#side-menu ul li.active:after {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 43px solid transparent;
+  border-left: 30px solid #f39c12;
+  content: '';
 }
 
 .content-container {
