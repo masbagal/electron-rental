@@ -1,6 +1,5 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {List, ListItem} from 'material-ui/List';
+import { Link } from 'react-router-dom'
 
 
 export default class SideMenu extends React.Component {
@@ -8,9 +7,15 @@ export default class SideMenu extends React.Component {
     return (
         <div className='columns three' id='side-menu'>
           <ul>
-            <li>Dashboard</li>
-            <li className='active'>List of Book</li>
-            <li>List of Book</li>
+            <Link to='/'>
+              <li>Dashboard</li>
+            </Link>
+            <Link to='list'>
+              <li>List of Book</li>
+            </Link>
+            <Link to='add'>
+              <li className='active'>Setup Book</li>
+            </Link>
             <li>List of Book</li>
           </ul>
         </div>

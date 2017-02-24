@@ -1,14 +1,29 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router-dom'
+
+import Container from '../container/MainContainer';
+import SideMenu from '../components/SideMenu/SideMenu';
+import BookForm from '../components/BookForm/BookForm';
+import BookTable from '../components/BookTable/BookTable';
+
+import HomePage from '../pages/HomePage';
+import BookList from '../pages/BookList';
+import BookSetup from '../pages/BookSetup';
 
 export default class MainContainer extends React.Component {
+  componentDidMount() {
+    console.log('component did mount');
+  }
+
   render() {
     return (
-      <MuiThemeProvider>
-        <div>
+      <div className='row'>
+        <SideMenu />
+        <div className='eight columns' style={{ paddingTop: '20px' }}>
           {this.props.children}
         </div>
-      </MuiThemeProvider>
+      </div>
     )
   }
+
 }

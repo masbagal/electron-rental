@@ -18,14 +18,20 @@ html {
 }
 
 body {
-  background: #f0f0f0;
+  background: #ecf0f1;
   min-height: 100%;
   width: 100%;
   font-family: Breplay;
+  color: #434343;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #mainContainer {
@@ -36,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 #side-menu {
   padding-top: 30px;
   border-right: 1px solid #ccc;
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background: #2c3e50;
   color: #ddd;
   height: 100vh;
 }
@@ -50,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #side-menu ul li.active {
-  background: #f39c12;
+  background: #aa5d39;
   font-family: Breplay-Bold;
   color: #ffffff
 }
@@ -60,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   top: 0;
   border: 43px solid transparent;
-  border-left: 30px solid #f39c12;
+  border-left: 30px solid #aa5d39;
   content: '';
 }
 
@@ -85,4 +91,60 @@ input[type='number'] {
 
 input[type='number']:focus {
   border-bottom: 1px solid rgba(0, 188, 212);
+}
+
+.paper {
+  background: #ffffff;
+  padding: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+div.styledInput {
+  position: relative;
+}
+
+table#formBook {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-collapse: separate;
+}
+
+table#formBook td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+div.styledInput label {
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #ccc;
+  margin: 0;
+  padding: 5px;
+}
+
+div.styledInput label.filled {
+  color: #2980b9;
+}
+
+div.styledInput input,
+div.styledInput input:focus,
+div.styledInput textarea {
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  border-bottom: 2px dashed #ccc;
+  padding: 5px;
+}
+
+.formBookTitle {
+  font-size: 2em;
 }
