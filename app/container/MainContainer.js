@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router-dom'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import Container from '../container/MainContainer';
 import SideMenu from '../components/SideMenu/SideMenu';
@@ -19,7 +19,7 @@ export default class MainContainer extends React.Component {
     return (
       <div className='row'>
         <SideMenu />
-        <div className='eight columns' style={{ paddingTop: '20px' }}>
+        <div className='eight columns' style={{ paddingTop: '50px' }}>
           {this.props.children}
         </div>
       </div>
